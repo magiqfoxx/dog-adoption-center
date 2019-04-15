@@ -1,0 +1,45 @@
+#section--dogs__title {
+  background-image: url("../../img/dogs/photo-1489440543286-a69330151c0b.jpeg");
+  background-size: cover;
+}
+
+#section--dogs__title hr {
+  width: 60%;
+  border-style: solid;
+}
+#section--dogs__main {
+  padding: 4rem 2rem;
+}
+.dogs--slates-1 {
+  display: grid;
+  grid-template-areas: "main main slate slate";
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+}
+.dogs--slates-2 {
+  display: grid;
+  grid-template-areas: "slate slate slate";
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 4rem 2rem;
+}
+
+#dogs--main__text {
+  grid-area: main;
+  align-self: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.dog--slate {
+  grid-area: slate;
+}
+#dogs--main__dog {
+  grid-area: main;
+  height: 100%;
+}
+#dogs--main__dog img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}

@@ -1,0 +1,54 @@
+#landing--section__title {
+  background-image: url("../../img/landing/photo-1550266665-c9661b0aa6a5.jpeg");
+  background-size: cover;
+}
+
+#landing--section__links {
+  display: grid;
+  grid-template-areas:
+    "dogs guides"
+    "dogs store";
+  margin-bottom: 2rem;
+}
+.landing--links {
+  padding: 4rem;
+  filter: grayscale(10);
+  text-align: left;
+}
+.landing--links:hover {
+  filter: none;
+
+  color: white;
+}
+.landing--links a {
+  font-size: 4rem;
+}
+
+.landing--links i {
+  font-size: 3rem;
+  display: block;
+}
+#landing--links__dogs {
+  grid-area: dogs;
+  background-image: url("../../img/landing/photo-1518717758536-85ae29035b6d.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+}
+#landing--links__dogs a {
+  font-size: 6rem;
+}
+
+#landing--links__guides {
+  grid-area: guides;
+  background-image: url("../../img/landing/photo-1487001175664-86de872e3cd6.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#landing--links__store {
+  grid-area: store;
+  background-image: url("../../img/landing/photo-1513904178077-6c5730ddd446.jpeg");
+  background-size: cover;
+  background-position: center;
+}

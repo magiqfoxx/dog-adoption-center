@@ -1,0 +1,11 @@
+#section--guides__title {
+  background-image: url("../../img/guides/photo-1548199973-03cce0bbc87b.jpeg");
+  background-size: cover;
+}
+.guides--slates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#section--guides__main {
+  padding: 0 2rem 2rem 2rem;
+}

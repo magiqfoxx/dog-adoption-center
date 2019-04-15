@@ -1,0 +1,15 @@
+footer hr {
+  border-style: solid;
+  color: var(--color-orange);
+  width: 80%;
+}
+#footer--links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+#footer--links ul li {
+  list-style: none;
+  line-height: 2rem;
+}
