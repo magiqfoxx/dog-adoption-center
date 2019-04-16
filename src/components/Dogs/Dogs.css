@@ -4,22 +4,32 @@
 }
 
 #section--dogs__title hr {
-  width: 60%;
   border-style: solid;
+  animation: hr;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+@keyframes hr {
+  0% {
+    width: 40%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 #section--dogs__main {
-  padding: 4rem 2rem;
+  padding: 2rem;
 }
 .dogs--slates-1 {
   display: grid;
   grid-template-areas: "main main slate slate";
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 40vh 40vh;
   grid-gap: 2rem;
 }
 .dogs--slates-2 {
   display: grid;
   grid-template-areas: "slate slate slate";
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 30vh 30vh;
   grid-gap: 4rem 2rem;
 }
 
@@ -32,12 +42,15 @@
 .dog--slate {
   grid-area: slate;
 }
+#dog--slate {
+  color: var(--color-gray);
+}
 #dogs--main__dog {
   grid-area: main;
   height: 100%;
 }
 #dogs--main__dog img {
-  height: 60%;
+  height: 80%;
   width: 100%;
   object-fit: cover;
   object-position: center;

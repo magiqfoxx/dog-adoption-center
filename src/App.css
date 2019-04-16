@@ -15,7 +15,7 @@ a {
 }
 body {
   --color-orange: #deb84e;
-  --color-gray: gray;
+  --color-gray: #b5b5b5;
 }
 section {
   min-width: 100vw;

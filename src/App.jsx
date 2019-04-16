@@ -11,7 +11,8 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 /* Dog images are not the same height 
-Scroll to the top after dog is clicked */
+Scroll to the top after dog is clicked 
+landing: the whole image should be a link*/
 const App = () => {
   return (
     <Router>

@@ -6,6 +6,7 @@ import DogSlate from "./DogsSlate";
 import "./Dogs.css";
 import dogs from "./dogs-db";
 
+/* Resize on the spot?*/
 const Dogs = () => {
   const [dog, setDog] = useState("");
 
@@ -36,6 +37,13 @@ const Dogs = () => {
         </div>
       );
     } else {
+      document
+        .querySelector(".dogs--slates-1")
+        .setAttribute(
+          "style",
+          "grid-template-areas : 'main main slate slate'  'main main slate slate'"
+        );
+
       return (
         <div id="dogs--main__dog">
           <img src={`../../img/dogs/${dog.file}.jpeg`} alt={dog.name} />
