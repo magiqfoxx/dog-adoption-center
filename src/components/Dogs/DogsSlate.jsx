@@ -4,13 +4,7 @@ import "./DogSlate.css";
 
 const DogsSlate = props => {
   return (
-    <div
-      className="slate"
-      id="dog--slate"
-      onClick={() =>
-        props.onClick(props.name, props.age, props.about, props.file)
-      }
-    >
+    <div className="slate" id="dog--slate" onClick={e => props.onClick(e)}>
       {/*src for the src folder but files in public folder*/}
       <img src={`../img/dogs/${props.file}.jpeg`} alt="dog" />
       <h3>

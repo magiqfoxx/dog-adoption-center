@@ -22,7 +22,9 @@
 }
 .dogs--slates-1 {
   display: grid;
-  grid-template-areas: "main main slate slate";
+  grid-template-areas:
+    "chosen chosen slate slate"
+    "chosen chosen slate slate";
   grid-template-rows: 40vh 40vh;
   grid-gap: 2rem;
 }
@@ -55,4 +57,22 @@
   object-fit: cover;
   object-position: center;
   cursor: pointer;
+}
+.chosen-dog {
+  /*grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;*/
+
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  grid-area: chosen;
+}
+@keyframes chosen {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2) translateY(20%);
+  }
 }

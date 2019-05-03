@@ -8,24 +8,28 @@ const Landing = () => {
     <React.Fragment>
       <section id="landing--section__title" />
       <section id="landing--section__links">
-        <div id="landing--links__dogs" className="landing--links">
-          <Link to="/dogs/" className="section--links">
+        <Link to="/dogs/" id="landing--link__dogs" className="section--links">
+          <div id="landing--links__dogs" className="landing--links">
             Meet the dogs
             <i className="fas fa-long-arrow-alt-right" />
-          </Link>
-        </div>
-        <div id="landing--links__guides" className="landing--links">
-          <Link to="/guides/" className="section--links">
+          </div>
+        </Link>
+        <Link
+          to="/guides/"
+          id="landing--link__guides"
+          className="section--links"
+        >
+          <div id="landing--links__guides" className="landing--links">
             Read our guides
             <i className="fas fa-long-arrow-alt-right" />
-          </Link>
-        </div>
-        <div id="landing--links__store" className="landing--links">
-          <Link to="/store/" className="section--links">
+          </div>
+        </Link>
+        <Link to="/store/" id="landing--link__store" className="section--links">
+          <div id="landing--links__store" className="landing--links">
             Visit the store
             <i className="fas fa-long-arrow-alt-right" />
-          </Link>
-        </div>
+          </div>
+        </Link>
       </section>
     </React.Fragment>
   );

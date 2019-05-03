@@ -9,10 +9,18 @@ import dogs from "./dogs-db";
 /* Resize on the spot?*/
 const Dogs = () => {
   const [dog, setDog] = useState("");
-
-  function chooseDog(name, age, about, file) {
+  //if no chosen dog: .dogs--slates-1: grid-template-columns: 1fr 1fr 1fr 1fr
+  //else : slate slate chosen chosen
+  //or chosen chosen slate slate
+  //animate outro: scale(0.5)
+  //animate intro: sclae(2)
+  function chooseDog(event) {
     //scroll up to the main bit
-    setDog({ name, age, about, file });
+    setDog(event.currentTarget); //current dog
+    if (dog) {
+      dog.classList.remove("chosen-dog");
+    }
+    return console.log(event.currentTarget.classList.add("chosen-dog"));
   }
   function renderDogs(index0, indexEnd) {
     return dogs.slice(index0, indexEnd).map(dog => {
@@ -23,7 +31,7 @@ const Dogs = () => {
           file={dog.file}
           about={dog.about}
           key={dog.id}
-          onClick={chooseDog}
+          onClick={e => chooseDog(e)}
         />
       );
     });
@@ -60,10 +68,7 @@ const Dogs = () => {
         <hr />
       </section>
       <section id="section--dogs__main" className="dogs--section__dogs">
-        <div className="dogs--slates dogs--slates-1">
-          {renderDog()}
-          {renderDogs(0, 6)}
-        </div>
+        <div className="dogs--slates dogs--slates-1">{renderDogs(0, 8)}</div>
         <div className="section--break">
           <h3>
             <Link to="/guides/">
