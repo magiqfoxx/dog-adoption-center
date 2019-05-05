@@ -24,6 +24,7 @@ const Guides = () => {
     <React.Fragment>
       <section id="section--guides__title" className="section--title">
         <h1>Guides</h1>
+        <hr />
         <h2>Read and learn</h2>
       </section>
       <div className="section--break">

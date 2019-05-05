@@ -2,10 +2,42 @@
   background-image: url("../../img/guides/photo-1548199973-03cce0bbc87b.jpeg");
   background-size: cover;
 }
+#section--guides__title hr {
+  color: white;
+  border-style: solid;
+  width: 80%;
+  text-align: right;
+  margin: 0;
+}
+#section--guides__title h2 {
+  margin: 0;
+}
 .guides--slates {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+.guides--slates .slate {
+  height: 25rem;
 }
 #section--guides__main {
   padding: 0 2rem 2rem 2rem;
+}
+
+@media (min-width: 550px) {
+  .guides--slates {
+    grid-template-columns: 1fr 1fr;
+  }
+  .guides--slates .slate:nth-child(3n) {
+    width: 200%;
+    height: 10rem;
+  }
+}
+@media (min-width: 800px) {
+  .guides--slates {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .guides--slates .slate:nth-child(3n) {
+    width: 100%;
+    height: 25rem;
+  }
 }

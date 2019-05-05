@@ -1,7 +1,7 @@
-body {
+body,
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 * {
@@ -49,7 +49,7 @@ section {
   display: block;
   color: var(--color-orange);
   border-style: solid;
-  width: 10%;
+  width: 4rem;
 }
 .slate {
   position: relative;

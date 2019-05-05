@@ -54,7 +54,10 @@ const Dogs = () => {
 
       return (
         <div id="dogs--main__dog">
-          <img src={`../../img/dogs/${dog.file}.jpeg`} alt={dog.name} />
+          <img
+            src={process.env.PUBLIC_URL + `./img/dogs/${dog.file}.jpeg`}
+            alt={dog.name}
+          />
           <h3>{dog.name}</h3>
           <p>{dog.about}</p>
         </div>

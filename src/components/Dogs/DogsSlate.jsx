@@ -6,7 +6,10 @@ const DogsSlate = props => {
   return (
     <div className="slate" id="dog--slate" onClick={e => props.onClick(e)}>
       {/*src for the src folder but files in public folder*/}
-      <img src={`../img/dogs/${props.file}.jpeg`} alt="dog" />
+      <img
+        src={process.env.PUBLIC_URL + `/img/dogs/${props.file}.jpeg`}
+        alt="dog"
+      />
       <h3>
         {props.name}, {props.age}
       </h3>

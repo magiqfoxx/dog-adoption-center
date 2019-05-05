@@ -23,16 +23,37 @@
 .dogs--slates-1 {
   display: grid;
   grid-template-areas:
-    "chosen chosen slate slate"
-    "chosen chosen slate slate";
+    "chosen chosen"
+    "chosen chosen"
+    "slate slate"
+    "slate slate";
   grid-template-rows: 40vh 40vh;
   grid-gap: 2rem;
 }
 .dogs--slates-2 {
   display: grid;
-  grid-template-areas: "slate slate slate";
+  grid-template-areas:
+    "slate"
+    " slate"
+    " slate";
   grid-template-rows: 30vh 30vh;
   grid-gap: 4rem 2rem;
+}
+@media (min-width: 500px) {
+  .dogs--slates-1 {
+    display: grid;
+    grid-template-areas:
+      "chosen chosen slate slate"
+      "chosen chosen slate slate";
+    grid-template-rows: 40vh 40vh;
+    grid-gap: 2rem;
+  }
+  .dogs--slates-2 {
+    display: grid;
+    grid-template-areas: "slate slate slate";
+    grid-template-rows: 30vh 30vh;
+    grid-gap: 4rem 2rem;
+  }
 }
 
 #dogs--main__text {

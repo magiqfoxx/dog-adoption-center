@@ -1,15 +1,49 @@
 #section--store__title {
   background-image: url("../../img/store/photo-1514984879728-be0aff75a6e8.jpeg");
   background-size: cover;
+  background-position: center;
 }
 #section--store__main {
   padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.dog--slate {
-  margin: 0 1rem;
+.store--main .dog--slate {
+  margin: 1rem 1rem;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 80vw;
+  max-height: 80vw;
+  overflow: hidden;
 }
 #store--main-1,
 #store--main-2,
 #store--main-3 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 750px) {
+  #store--main-1 .dog--slate {
+    width: calc((80vw - 2rem) / 2);
+    height: calc((80vw - 2rem) / 2);
+  }
+}
+/* each slate is 200px + 1rem margins on each side and it has to fit withing 80vw
+but browser miscalculates as 502px instead of 580? :( 
+  min-width: calc(400px + 4rem)*1.25 1rem = 16px*/
+@media (min-width: 580px) {
+  #store--main-3 .dog--slate {
+    width: calc((80vw - 2rem) / 2);
+    height: calc((80vw - 2rem) / 2);
+  }
+}
+@media (min-width: calc((800px + 6rem)*1.25)) {
+  #store--main-3 .dog--slate {
+    width: calc((80vw - 2rem) / 4);
+    height: calc((80vw - 2rem) / 4);
+  }
 }

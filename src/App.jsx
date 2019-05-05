@@ -15,7 +15,7 @@ Scroll to the top after dog is clicked
 landing: the whole image should be a link*/
 const App = () => {
   return (
-    <Router>
+    <Router basename="/dog-center/">
       <React.Fragment>
         <Navigation />
         <Route path="/" exact component={Landing} />
