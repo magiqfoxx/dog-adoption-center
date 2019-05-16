@@ -21,7 +21,7 @@ const dogs = [
     file: "photo-1504826260979-242151ee45b7",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 8
+    id: 3
   },
   {
     name: "Snorlax",
@@ -29,7 +29,7 @@ const dogs = [
     file: "photo-1529429617124-95b109e86bb8",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 9
+    id: 4
   },
   {
     name: "Fill",
@@ -37,7 +37,7 @@ const dogs = [
     file: "photo-1530281700549-e82e7bf110d6",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 10
+    id: 5
   },
   {
     name: "Benny",
@@ -45,7 +45,22 @@ const dogs = [
     file: "photo-1537151672256-6caf2e9f8c95",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 11
+    id: 6
+  },
+  {
+    name: "Mick and Jake",
+    age: 5,
+    file: "photo-d52166576vghdsvfh",
+    about: "This pair is unseparable and will need to find a home together",
+    id: 7
+  },
+  {
+    name: "Tommy",
+    age: 5,
+    file: "kieran-white-235113-unsplash",
+    about:
+      "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
+    id: 8
   },
   {
     name: "Greg",
@@ -53,7 +68,7 @@ const dogs = [
     file: "photo-1455287278107-115faab3eafa",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 12
+    id: 9
   },
   {
     name: "Nora",
@@ -61,7 +76,7 @@ const dogs = [
     file: "photo-1551700376-d8e62a783fce",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 3
+    id: 10
   },
   {
     name: "Sunny",
@@ -69,14 +84,14 @@ const dogs = [
     file: "photo-1424709746721-b8fd0ff52499",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 4
+    id: 11
   },
   {
     name: "Suzie",
     age: 4,
     file: "photo-1437957146754-f6377debe171",
     about: "Adores sleeping",
-    id: 7
+    id: 12
   },
   {
     name: "Flora",
@@ -87,19 +102,12 @@ const dogs = [
     id: 13
   },
   {
-    name: "Mick and Jake",
-    age: 5,
-    file: "photo-d52166576vghdsvfh",
-    about: "This pair is unseparable and will need to find a home together",
-    id: 5
-  },
-  {
-    name: "Flora",
+    name: "Stone",
     age: 2,
-    file: "photo-1478029973231-f42d99fe5c20",
+    file: "vincent-van-zalinge-408523-unsplash",
     about:
       "Loves chasing other dogs and rolling in grass. Shy but friendly once he gets to know you. Favorite snack is beef jerky",
-    id: 6
+    id: 14
   }
 ];
 export default dogs;

@@ -9,3 +9,6 @@ nav ul li {
   display: inline;
   margin: 0 1rem;
 }
+nav * {
+  font-family: "Quicksand", sans-serif;
+}
