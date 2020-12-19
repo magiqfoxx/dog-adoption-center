@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dog-center/static/css/main.b53c5ad3.chunk.css",
+    "main.js": "/dog-center/static/js/main.c0ac5ea0.chunk.js",
+    "main.js.map": "/dog-center/static/js/main.c0ac5ea0.chunk.js.map",
+    "runtime-main.js": "/dog-center/static/js/runtime-main.0cb0144d.js",
+    "runtime-main.js.map": "/dog-center/static/js/runtime-main.0cb0144d.js.map",
+    "static/js/2.47f0d611.chunk.js": "/dog-center/static/js/2.47f0d611.chunk.js",
+    "static/js/2.47f0d611.chunk.js.map": "/dog-center/static/js/2.47f0d611.chunk.js.map",
+    "index.html": "/dog-center/index.html",
+    "static/css/main.b53c5ad3.chunk.css.map": "/dog-center/static/css/main.b53c5ad3.chunk.css.map",
+    "static/js/2.47f0d611.chunk.js.LICENSE.txt": "/dog-center/static/js/2.47f0d611.chunk.js.LICENSE.txt",
+    "static/media/Landing.css": "/dog-center/static/media/photo-1550266665-c9661b0aa6a5.491d0114.jpeg",
+    "static/media/Dogs.css": "/dog-center/static/media/photo-1489440543286-a69330151c0b.427dc234.jpeg",
+    "static/media/Store.css": "/dog-center/static/media/photo-1514984879728-be0aff75a6e8.d3fc28fe.jpeg",
+    "static/media/Guides.css": "/dog-center/static/media/photo-1548199973-03cce0bbc87b.a3e4dd27.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0cb0144d.js",
+    "static/js/2.47f0d611.chunk.js",
+    "static/css/main.b53c5ad3.chunk.css",
+    "static/js/main.c0ac5ea0.chunk.js"
+  ]
+}
