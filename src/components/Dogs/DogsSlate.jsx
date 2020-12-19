@@ -1,11 +1,11 @@
 import React from "react";
 
-const DogsSlate = props => {
+const DogsSlate = (props) => {
   return (
     <div
       className="slate"
       id={`dog--slate-${props.id}`}
-      onClick={e => props.onClick(e)}
+      onClick={(e) => props.onClick(e)}
     >
       {/*src for the src folder but files in public folder*/}
       <img

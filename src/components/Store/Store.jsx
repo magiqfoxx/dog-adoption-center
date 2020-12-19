@@ -17,10 +17,7 @@ const Store = () => {
         <div className="store--main" id="store--main-1">
           <div className="slate dog--slate">
             <img
-              src={
-                process.env.PUBLIC_URL +
-                "/img/store/photo-1488569098285-adeecb95641f.jpeg"
-              }
+              src={`${process.env.PUBLIC_URL}/img/store/photo-1488569098285-adeecb95641f.jpeg`}
               alt="dog sniffing a dog treat"
             />
           </div>

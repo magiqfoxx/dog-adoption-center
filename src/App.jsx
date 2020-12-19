@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation";
 import Landing from "./components/Landing/Landing";
@@ -19,10 +19,10 @@ const App = () => {
     <React.Fragment>
       <Navigation />
       <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/dogs/" component={Dogs} />
-        <Route path="/guides/" component={Guides} />
-        <Route path="/store/" component={Store} />
+        <Route path={`/`} exact component={Landing} />
+        <Route path={`/dogs/`} component={Dogs} />
+        <Route path={`/guides/`} component={Guides} />
+        <Route path={`/store/`} component={Store} />
         <Route component={Page404} />
       </Switch>
       <Footer />
